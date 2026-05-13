@@ -83,10 +83,10 @@ public partial class MainWindow : Window
             {
                 drawingContext.DrawImage(image, new Rect(xOffset, yOffset, image.PixelWidth, image.PixelHeight));
 
-                // Смещаем начальную позицию следующего изобрашения по горизонтали на ширину предыдущего
+                // Смещаем начальную позицию следующего изображения по горизонтали на ширину предыдущего
                 xOffset += (int)image.PixelWidth;
 
-                // Если дошли до конца строки то смещаем начальную поицию по вертикали на высоту предыдущей строки и обнуляем начало по горизонтали
+                // Если дошли до конца строки то смещаем начальную позицию по вертикали на высоту предыдущей строки и обнуляем начало по горизонтали
                 if (xOffset == (int)image.PixelWidth * 6) { yOffset += image.PixelWidth; xOffset = 0; }
             }
         }
