@@ -36,7 +36,7 @@ public partial class MainWindow : Window
     {
         if (Image11.Source == null)
         {
-            MessageBox.Show("Сначало сгенерируйте карту.");
+            MessageBox.Show("Сначала сгенерируйте карту.");
             return;
         }
 
